@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+</head>
+<body>
+<form method="post" >
+    {% csrf_token %}
+    name<input type="text" value="{{data.name}}" id="username" name="username"/><br/>
+    email<input type="text" value="{{data.email}}" id="useremail" name="useremail"/><br/>
+    mobile<input type="text" value="{{data.mobile}}" id="usermobile" name="usermobile"/><br/>
+    subject<input type="text" value="{{data.subject}}" id="usersubject" name="usersubject"/><br/>
+    password<input type="text" value="{{data.password}}" id="userpassword" name="userpassword"/><br/>
+    <input type="submit" name="btnregister" id="btnregister" value="Update">
+</form>
+</body>
+</html>
